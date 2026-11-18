@@ -7,7 +7,6 @@
 
 ## 2. Team Members
 
-**Write:**
 
 - Names: **Annie Kadiambu - Alexandre Fath**
 - Initial responsibilities: **Study the dataset**
@@ -33,14 +32,17 @@
 
 Give a direct link to the dataset and identify its source organization, repository, or publication. Describe what one row represents, the approximate number of observations, available features, data types, and the target if one exists. Note known missing values, quality limitations, access steps, usage restrictions, and licensing. Explain why these data can address the stated problem. If the group will collect or generate data, describe the process and why it is feasible.
 
-**Write:**
 
-- Dataset name and direct link: `[URL]`
-- Source: `[Organization, repository, or publication]`
-- Unit of observation and approximate size: `[What does one row represent? How many rows?]`
-- Features, data types, and target/output: `[What is available?]`
-- Suitability and known limitations: `[Why can this answer the question? What may be difficult?]`
-- Access, license, or collection feasibility: `[What has the team checked?]`
+- Dataset name and direct link: **Fake News Dataset (kaggle)** [https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?select=True.csv]
+- Source: Organization (University of Victoria)
+- Unit of observation and approximate size: **1 row = 1 article associated to a label (fake or real). Training set : 40 000 observations ; Test set : 4 000 observations**
+- Features, data types, and target/output: 
+	|Features| index| title| text| subject| date| class (target)|
+	|---|---|---|---|---|---|---|
+	|Data types| int| string|string|string|object|string|
+	
+- Suitability and known limitations: **We have a large variety of observations coming from genuine and legitimate news sites, but the dataset is balanced (52% fake news - 48 % real news) which may not be representative of the journalistic spectruum.**
+- Access, license, or collection feasibility: **CC BY-NC-SA 4.0 ; Attribution-NonCommercial-ShareAlike 4.0 International**
 
 ## 7. Machine Learning Task
 
