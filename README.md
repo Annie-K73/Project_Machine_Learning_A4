@@ -30,12 +30,10 @@
 
 ## 6. Dataset Description
 
-Give a direct link to the dataset and identify its source organization, repository, or publication. Describe what one row represents, the approximate number of observations, available features, data types, and the target if one exists. Note known missing values, quality limitations, access steps, usage restrictions, and licensing. Explain why these data can address the stated problem. If the group will collect or generate data, describe the process and why it is feasible.
-
 
 - Dataset name and direct link: **Fake News Dataset (kaggle)** [https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?select=True.csv]
 - Source: Organization (University of Victoria)
-- Unit of observation and approximate size: **1 row = 1 article associated to a label (fake or real). Training set : 40 000 observations ; Test set : 4 000 observations**
+- Unit of observation and approximate size: **1 row = 1 article associated to a label (fake or real). Training set:40 000 observations ; Test set:4 000 observations**
 - Features, data types, and target/output: 
 	|Features| index| title| text| subject| date| class (target)|
 	|---|---|---|---|---|---|---|
@@ -48,8 +46,8 @@ Give a direct link to the dataset and identify its source organization, reposito
 
 - Task: **Classification**
 - Inputs: **Title, Text, Subject, Date**
-- Target or expected output: **Boolean value (0=not fake / 1=fake)**
-- Measurable goal: **Metrics such as accuracy precision and actual real-life predicition may determine how well the model behaves**
+- Target or expected output: **Boolean value (0=real / 1=fake)**
+- Measurable goal: **Metrics such as accuracy, precision, recall and actual real-life predicition may determine how well the model behaves**
 
 ## 8. Baseline Strategy
 
@@ -59,14 +57,14 @@ Give a direct link to the dataset and identify its source organization, reposito
 
 ## 9. Evaluation Strategy
 
-- Split or validation plan: **Random splits with increasing distribution percentage for each split**
+- Split or validation plan: **k-fold cross-validation**
 - Metrics: **Accuracy, precision, recall, F1-score**
 - Fit boundary: `[Which steps learn from training data? How will choices be made?]`
 - Evaluation limitations: **It is unclear whether the dataset is representative of the actual distribution of fake news in general and the model may as such adopt a bias towards one category**
 
 ## 10. Initial Work Plan
 
-- First tasks and order: **Dataset exploration, cleaning, scaling, preprocessing, testing of different classifier models, conclusion**
+- First tasks and order: **Dataset exploration, train/tets split, preprocessing, testing of different classifier models, conclusion**
 - Responsibilities: **All tasks will be shared**
 - Week 1 feasibility check: **Dataset exploration**
 - Open questions: **The model may be eventually tested on real data for actual use**
