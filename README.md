@@ -3,7 +3,7 @@
 
 ## 1. Project Title
 
-- Project title: ***Fake News Predictor***
+- Project title: ***Source : Trust Me Bro***
 
 ## 2. Team Members
 
